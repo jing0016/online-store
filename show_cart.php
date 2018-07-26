@@ -5,6 +5,7 @@
 
   @$new = $_GET['new'];
 
+  //$new is isbn
   if($new) {
     //new item selected
     if(!isset($_SESSION['cart'])) {
@@ -13,6 +14,9 @@
       $_SESSION['total_price'] ='0.00';
     }
 
+    //the session variable 'cart' is an associative array
+    //ISBNs as keys and quantities as values
+    //0672329166=>1
     if(isset($_SESSION['cart'][$new])) {
       $_SESSION['cart'][$new]++;
     } else {
