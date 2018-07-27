@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153eb78e-773c-4d74-bce7-32b242e07b1d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/book_fns.php" beforeDir="false" afterPath="$PROJECT_DIR$/book_fns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_fns.php" beforeDir="false" afterPath="$PROJECT_DIR$/output_fns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_sc.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/book_sc.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="book_fns.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book_fns.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,17 +57,26 @@
       <file leaf-file-name="show_cart.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show_cart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="-28">
               <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="purchase.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/purchase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -90,8 +93,8 @@
       <file leaf-file-name="output_fns.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output_fns.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+            <state relative-caret-position="329">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#67#73#1" expanded="true" />
                 <element signature="e#49#55#1" expanded="true" />
@@ -131,6 +134,7 @@
         <option value="$PROJECT_DIR$/book_fns.php" />
         <option value="$PROJECT_DIR$/output_fns.php" />
         <option value="$PROJECT_DIR$/checkout.php" />
+        <option value="$PROJECT_DIR$/purchase.php" />
       </list>
     </option>
   </component>
@@ -144,7 +148,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="711" />
+    <option name="x" value="655" />
     <option name="y" value="23" />
     <option name="width" value="1205" />
     <option name="height" value="798" />
@@ -201,15 +205,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532547691191</updated>
-      <workItem from="1532547696723" duration="17671000" />
+      <workItem from="1532547696723" duration="18304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17671000" />
+    <option name="totallyTimeSpent" value="18304000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="725" y="23" width="1205" height="798" extended-state="0" />
+    <frame x="655" y="23" width="1205" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -254,13 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/show_cat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -282,10 +279,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/output_fns.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+        <state relative-caret-position="329">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#67#73#1" expanded="true" />
             <element signature="e#49#55#1" expanded="true" />
@@ -296,15 +300,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show_cart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="-28">
           <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="300">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
