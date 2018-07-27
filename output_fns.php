@@ -84,6 +84,9 @@ function display_cart($cart, $change=true, $images =1)
         </tr>";
 
   // display save change button
+  //type="hidden",the original purpose was to make a field which will be submitted with form's submit.
+    // Sometimes, there were need to store some information in hidden field and submit it with form's submit.
+  //name and value fields are required
   if($change == true) {
       echo "<tr>
           <td colspan=\"".(2+$images)."\">&nbsp;</td>
