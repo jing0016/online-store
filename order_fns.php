@@ -109,3 +109,11 @@ function insert_order($order_details)
 
     return $orderid;
 }
+
+function process_card($card_details) {
+    // connect to payment gateway or
+    // use gpg to encrypt and mail or
+    // store in DB if you really want to
+
+    return true;
+}

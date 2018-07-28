@@ -82,3 +82,44 @@ function calculate_items($cart)
     }
     return $items;
 }
+
+function get_books($catid) {
+    // query database for the books in a category
+    if ((!$catid) || ($catid == '')) {
+        return false;
+    }
+
+    $conn = db_connect();
+    $query = "select * from books where catid = '".$conn->real_escape_string($catid)."'";
+    $result = @$conn->query($query);
+    if (!$result) {
+        return false;
+    }
+    $num_books = @$result->num_rows;
+    if ($num_books == 0) {
+        return false;
+    }
+    $result = db_result_to_array($result);
+    return $result;
+}
+
+function get_book_details($isbn) {
+    // query database for all details for a particular book
+    if ((!$isbn) || ($isbn=='')) {
+        return false;
+    }
+    $conn = db_connect();
+    $query = "select * from books where isbn='".$conn->real_escape_string($isbn)."'";
+    $result = @$conn->query($query);
+    if (!$result) {
+        return false;
+    }
+    $result = @$result->fetch_assoc();
+    return $result;
+}
+
+function calculate_shipping_cost() {
+    // as we are shipping products all over the world
+    // via teleportation, shipping is fixed
+    return 20.00;
+}
