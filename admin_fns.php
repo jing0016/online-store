@@ -1,6 +1,6 @@
 <?php
 // This file contains functions used by the admin interface
-// for the Book-O-Rama shopping cart.
+// for the online shopping cart.
 
 function display_category_form($category = '') {
 // This displays the category form.
