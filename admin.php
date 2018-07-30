@@ -11,7 +11,7 @@ require_once('book_sc_fns.php');
 session_start();
 
 
-if (($_POST['username']) && ($_POST['passwd'])) {
+if ((isset($_POST['username'])) && (isset($_POST['passwd']))) {
     // they have just tried logging in
 
     $username = $_POST['username'];
