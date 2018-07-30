@@ -127,8 +127,10 @@ function do_html_header($title = '') {
     <table width="100%" border="0" cellspacing="0" bgcolor="#cccccc">
         <tr>
             <td rowspan="2">
-                <a href="index.php"><img src="images/Book-O-Rama.gif" alt="Bookorama" border="0"
-                                         align="left" valign="bottom" height="55" width="325"/></a>
+<!--                <a href="index.php"><img src="images/Book-O-Rama.gif" alt="Bookorama" border="0"-->
+<!--                                         align="left" valign="bottom" height="55" width="325"/></a>-->
+                    <a href="index.php"><img src="images/OnlineStore.jpg" alt="OnlineStore" border="0"-->
+                                          align="left" valign="bottom" height="250" width="970"/></a>
             </td>
             <td align="right" valign="bottom">
                 <?php
@@ -201,9 +203,14 @@ function display_books($book_array) {
             $url = "show_book.php?isbn=" . urlencode($row['isbn']);
             echo "<tr><td>";
             if (@file_exists("images/{$row['isbn']}.jpg")) {
-                $title = "<img src=\"images/". htmlspecialchars($row['isbn']) . ".jpg\"
+
+                $size = GetImageSize("images/{$row['isbn']}.jpg");
+                if(($size[0]>0) && ($size[1]>0))
+                {
+                    echo "<img src=\"images/". htmlspecialchars($row['isbn']) . ".jpg\"
                   style=\"border: 1px solid black\"/>";
-                do_html_url($url, $title);
+                }
+
             } else {
                 echo "&nbsp;";
             }
